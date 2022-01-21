@@ -1,0 +1,76 @@
+html {
+    /* To make use of full height of page*/
+    height: 100%;
+    margin: 0;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    min-height: 100%;
+}
+.container {
+    background-color: rgb(99, 61, 124);
+    height: 600px;
+    width: 400px;
+    border: 2px solid rgb(127, 192, 194);
+    display: flex;
+    flex-direction: column;
+}
+.screen {
+    flex-basis: 25%;
+    background-color: black;
+    margin: 25px;
+    display: flex;
+}
+.display {
+    flex-basis: 80%;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+    font-size: 40px;
+}
+.clear {
+    flex-basis: 20%;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttons {
+    flex-basis: 75%;
+    margin: 25px;
+    display: flex;
+}
+.numbers {
+    flex-basis: 75%;
+    background-color: rgb(219, 21, 21);
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    padding: 10px;
+}
+.numbers > div,
+.operators > div {
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+}
+.numbers > div:hover,
+.operators > div:hover,
+.clear:hover {
+    background-color: green;
+}
+.operators {
+    flex-basis: 25%;
+    background-color: rgb(219, 21, 21);
+    display: grid;
+    grid-template-columns: auto;
+    gap: 10px;
+    padding: 10px;
+}
